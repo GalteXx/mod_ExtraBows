@@ -1,0 +1,58 @@
+{
+  "itemName" : "mechbow",
+  "price" : 15000,
+  "inventoryIcon" : "mechbowicon.png",
+  "maxStack" : 1,
+  "rarity" : "legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "Damn,dude, thats OP",
+  "shortdescription" : "Mech bow",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 8,
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "mechbowfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.125, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/gun/bow_loose.ogg" ],
+      "perfectRelease" : [ "/sfx/gun/bow_loose_perfect.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "drawFrameSelector" : "poisonBowImageSelector",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "projectileType" : "energybeam",
+    "powerProjectileType" : "mechmissile",
+    "projectileParameters" : {
+      "power" : 17
+    }
+  },
+
+  "altAbilityType" : "bowshot",
+  "altAbility" : {
+    "drawFrameSelector" : "poisonBowImageSelectorNoPower",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "projectileType" : "mechbladeswoosh",
+    "powerProjectileType" : "mechbladeswoosh",
+    "projectileParameters" : {
+      "power" : 25
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

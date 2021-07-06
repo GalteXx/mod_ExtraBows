@@ -1,0 +1,61 @@
+{
+  "objectName" : "plantbowseed",
+  "colonyTags" : ["nature"],
+  "rarity" : "Common",
+  "category" : "seed",
+  "description" : "Plastic-free bow will grow there",
+  "shortdescription" : "Plant bow Seed",
+  "objectType" : "farmable",
+  "printable" : false,
+  "price" : 38,
+
+  "apexDescription" : "I wounder if one day it will become banana.",
+  "avianDescription" : "A bow that grows on a tree!",
+  "floranDescription" : "Kind of fam-m-milliar",
+  "glitchDescription" : "Confused",
+  "humanDescription" : "Why?",
+  "hylotlDescription" : "Hylotl codex allows to use bows",
+  "novakidDescription" : "Kinda strange tho, at least no need to use blueprint",
+
+  "inventoryIcon" : "plantbowseedicon.png",
+
+  "tooltipKind" : "seed",
+  "largeImage" : "plantbowseed.png:default.3.0",
+
+
+  "orientations" : [
+    {
+      "dualImage" : "plantbowseed.png:<color>.<stage>.<alt>",
+      "imagePosition" : [0, 0],
+      "frames" : 1,
+      "animationCycle" : 0.5,
+
+      "spaces" : [ [1, 0], [0, 0], [1, 1], [0, 1], [1, 2], [0, 2], [1, 3], [0, 3] ],
+      "requireTilledAnchors" : true,
+      "anchors" : [ "bottom" ]
+
+    }
+  ],
+
+  "radioMessagesOnPickup" : [ "pickupseed" ],
+
+  "stages" : [
+    {
+      "duration" : [220, 240] 
+    },
+    {
+      "duration" : [120, 130] 
+    },
+    {
+      "alts" : 5,
+      "duration" : [220, 230] 
+    },
+    {
+      "alts" : 5,
+      "harvestPool" : "plantBowHarvest",
+      "resetToStage" : 2
+    }
+  ],
+
+  "maxImmersion" : 0.125
+}

@@ -1,0 +1,13 @@
+{
+  "plantBowHarvest" : [
+    [0, {
+      "pool" : [
+        {"weight" : 0.89, "item" : "plantbow"}
+      ],
+      "poolRounds" : [
+        [0.6, 1],
+        [0.4, 2]
+      ]
+    } ]
+  ]
+}

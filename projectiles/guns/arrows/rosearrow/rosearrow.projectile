@@ -1,0 +1,24 @@
+{
+  "projectileName" : "rosearrow",
+  "physics" : "arrow",
+  "fullbright" : false,
+  "actionOnCollide" : [
+    {
+      "action" : "sound",
+      "options" : [
+        "/sfx/gun/impact_arrow.ogg"
+      ]
+    }
+  ],
+  "image" : "rosearrow.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "damageKindImage" : "icon.png",
+  "power" : 12,
+  "knockback" : 10,
+  "knockbackDirectional" : true,
+  "damageKind" : "poisonbow",
+  "timeToLive" : 10,
+  "damagePoly" : [ [8, -0.2], [8.5, -0.2], [8.5, 0.2], [8, 0.2] ],
+  "pointLight" : false
+}

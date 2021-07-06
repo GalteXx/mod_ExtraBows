@@ -1,0 +1,9 @@
+{
+  "input" : [
+    { "item" : "refinedaegisalt", "count" : 7 },
+    { "item" : "solariumstar", "count" : 8 },
+    { "item" : "battery", "count" : 3 }
+  ],
+  "output" : { "item" : "ionbow", "count" : 1 },
+  "groups" : [ "craftinganvil3", "weapons", "all" ]
+}

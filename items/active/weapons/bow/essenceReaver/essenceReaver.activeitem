@@ -1,0 +1,57 @@
+{
+  "itemName" : "essenceReaver",
+  "price" : 9040,
+  "inventoryIcon" : "essenceReavericon.png",
+  "maxStack" : 1,
+  "rarity" : "Legendary",
+  "tooltipKind" : "bow",
+  "category" : "bow",
+  "description" : "Infuses unkonwn matter into attack form",
+  "shortdescription" : "Essence Reaver",
+  "twoHanded" : true,
+  "itemTags" : ["weapon", "ranged", "bow"],
+
+  "radioMessagesOnPickup" : [ "pickupbow" ],
+
+  "level" : 7,
+
+  "animation" : "/items/active/weapons/bow/bow.animation",
+  "animationParts" : {
+    "bow" : "essenceReaverfull.png"
+  },
+  "animationCustom" : {
+    "animatedParts" : { "parts" : { "bow" : { "properties" : {
+      "offset" : [0.125, 0]
+    }}}},
+    "sounds" : {
+      "draw" : [ "/sfx/gun/bow_draw1.ogg", "/sfx/gun/bow_draw2.ogg", "/sfx/gun/bow_draw3.ogg" ],
+      "release" : [ "/sfx/melee/astraltear1.ogg" ],
+      "perfectRelease" : [ "/sfx/melee/astraltear2.ogg" ]
+    }
+  },
+
+  "scripts" : ["/items/active/weapons/bow/bow.lua"],
+
+  "primaryAbilityType" : "bowshot",
+  "primaryAbility" : {
+    "drawFrameSelector" : "poisonBowImageSelector",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "projectileType" : "orangeSting",
+    "powerProjectileType" : "orangeStingFast",
+    "projectileParameters" : {
+      "power" : 20
+    }
+  },
+
+  "altAbilityType" : "zenshot",
+  "altAbility" : {
+    "drawFrameSelector" : "poisonBowImageSelectorNoPower",
+    "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
+    "projectileType" : "laserarrow",
+    "projectileParameters" : {
+      "power" : 30
+    }
+  },
+
+  "builder" : "/items/buildscripts/buildbow.lua"
+}

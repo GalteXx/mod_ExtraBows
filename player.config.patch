@@ -1,0 +1,6 @@
+[
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "ionbow"} },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "mechbow"} },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "plantbowseed"} },
+    { "op": "add", "path": "/defaultBlueprints/tier1/-", "value": {"item": "neonbow"} }
+]
