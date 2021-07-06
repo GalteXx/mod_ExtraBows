@@ -1,2 +1,2 @@
-# mod_ExtraBows
+# ExtraBows
 Poor starbound modding attempts
