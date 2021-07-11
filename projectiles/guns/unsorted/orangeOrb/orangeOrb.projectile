@@ -1,0 +1,20 @@
+{
+  "projectileName" : "orangeOrb",
+  "image" : "orangeOrb.png",
+  "animationCycle" : 0.25,
+  "frameNumber" : 1,
+  "pointLight" : false,
+  "actionOnReap" : [
+    {
+      "action" : "config",
+      "file" : "/projectiles/explosions/bulletexplosion/bulletexplosion.config"
+    }
+  ],
+  "power" : 5.0,
+  "speed" : 2,
+  
+  "scripts" : ["/projectiles/activeitems/staff/staffprojectilespawner.lua"],
+  "spawnDelay" : 0.5,
+  "spawnProjectile" : "orangeSting",
+  "damageKind" : "default"
+}

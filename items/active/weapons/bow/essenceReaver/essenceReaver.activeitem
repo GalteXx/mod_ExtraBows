@@ -43,11 +43,11 @@
     }
   },
 
-  "altAbilityType" : "zenshot",
+  "altAbilityType" : "bowshot",
   "altAbility" : {
-    "drawFrameSelector" : "poisonBowImageSelectorNoPower",
+    "drawFrameSelector" : "poisonBowImageSelector",
     "drawArmFrames" : ["rotation", "swim.2", "swim.2", "swim.2", "swimIdle.1", "swimIdle.1"],
-    "projectileType" : "laserarrow",
+    "projectileType" : "orangeOrb",
     "projectileParameters" : {
       "power" : 30
     }
